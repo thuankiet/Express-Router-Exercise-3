@@ -1,0 +1,17 @@
+h1 Rent Book
+
+form(action='/transactions/create', method='POST')
+  label Choose your user:
+  select(name="userName")
+    each user in users
+      option= user.userName
+  br
+  br
+  label Choose your book:
+  select(name="bookName")
+    each book in books
+      option= book.title
+  br
+  br
+  button(type='submit', style="width:100px; height:30px") Rent
+    
