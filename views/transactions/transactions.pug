@@ -1,0 +1,12 @@
+h1 Transactions
+
+a(href="/transactions/create") Create New Book For User
+
+ul
+  each transaction in transactions
+    li
+      span(style="background-color:dodgerblue") USER ID: &nbsp
+      span= transaction.userId
+      span &nbsp - &nbsp
+      span(style="background-color:green") BOOK ID: &nbsp
+      span= transaction.bookId

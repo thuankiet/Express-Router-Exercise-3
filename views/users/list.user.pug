@@ -1,0 +1,12 @@
+h1 User List
+
+a(href="/users/create") Create New User
+
+ul
+  each user in users
+    li
+      span= user.userName
+      span &nbsp
+      a(href="/users/edit-user/"+user.id, style="background-color:dodgerblue; text-decoration:none; color:white") Edit Name
+      span &nbsp
+      a(href="/users/delete/"+user.id, style="background-color:red; text-decoration:none; color:white") Delete
